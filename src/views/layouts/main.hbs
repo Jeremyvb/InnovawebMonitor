@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Innovaweb Monitor</title>
+    
+    <!-- Tailwind CSS Link -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+
+    <!-- Fontawesome Link -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+    <!--Regular Datatables CSS-->
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <!--Responsive Extension Datatables CSS-->
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+
+  </head>
+  <body class="bg-yellow-300">
+    <nav class="flex py-5 bg-yellow-500 text-white px-24">
+      <div class="w-1/2 px-12 mr-auto">
+        <h1 class="text-2xl font-bold">INNOOVAWEB MONITOR</h1>
+      </div>
+
+      <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
+        {{#if name}}
+            <li class="nav-item px-4">
+                <p class="semi-bold">{{name}} </p>
+            </li>
+    
+            <li class="nav-item px-4">
+                <a href="/logout" class="nav-link font-semibold bg-red-500 text-white hover:bg-red-700 py-3
+                px-4 rounded-md">Cerrar sesión</a>
+            </li>        
+
+        {{else}}
+            <li class="nav-item px-4">
+                <a href="/login" class="nav-link font-semibold hover:bg-green-700 py-3 px-4 rounded-md">Iniciar sesión</a>
+            </li>
+
+            <li class="nav-item px-4">
+                <a href="/register" class="nav-link font-semibold border-2 border-white hover:bg-white hover:text-green-700 py-3
+                px-4 rounded-md">Registrarse</a>
+            </li>
+        {{/if}}
+      </ul>
+    </nav>
+
+    {{{body}}}
+
+    <!-- jQuery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>		
+	<!--Datatables -->
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+  </body>
+</html>
