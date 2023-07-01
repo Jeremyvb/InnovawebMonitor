@@ -1,7 +1,7 @@
 # InnovawebMonitor
 * Avance proyecto para a asignatura Ingeniería de Software (primer semestre 2023) *
 * Integrantes: Adolfo Lazcano, Jeremy Villalobos y José Parada *
-* Fecha de entrga: 30/06/2023 *
+* Fecha de entrega: 30/06/2023 *
 
 Introducción al proyecto
 
@@ -24,6 +24,28 @@ Datos importantes a saber del proyecto
 - El proyecto cuenta con una conexión a base de datos mysql.
 - Todas las dependencias necesarias para el desarrollo fueron descargas en un inicio.
 - Todo el código desarrollado de encuentra disponible en el repositio actual.
+
+Estructura del proyecto
+
+- node_modules (carpeta)
+    - *todos los módulos*
+- src (carpeta)
+    - controllers (carpeta)
+        - LoginController.js
+    - img (carpeta)
+        - template.jpg
+    - routes (carpeta)
+        - Llogin.js
+    - views (carpeta)
+        - layouts (carpeta)
+            - main.hbs
+        - login (carpeta)
+            - index.hbs
+            - register.hbs
+        - home.hbs
+    - app.js
+package-lock.json
+packaje.json
 
 Pruebas del proyecto
 
